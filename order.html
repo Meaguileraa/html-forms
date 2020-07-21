@@ -19,44 +19,51 @@
     <h2>Melon Options</h2>
 
     <p>
-        Choose from one of these melons:
+    Choose from one of these melons:
     </p>
         <table>
             <tr>
-            <td>Watermelon</td> 
-            <td>$1,200.00</td>
+                <td>Watermelon</td>
+                <td>$1,200.00</td>
             </tr>
 
             <tr>
-            <td>Canteloupe</td>
-            <td>$400.00</td>
+                <td>Canteloupe</td>
+                <td>$400.00</td>
             </tr>
 
             <tr>
-            <td>Honeydew</td> 
-            <td>$1,750,00.00</td>
+                <td>Honeydew</td> 
+                <td>$1,750,00.00</td>
             </tr>
         </table>
 
-        Order Form
+        <h2>Order Form</h2>
 
-        Your name
+        <form>
+            <label>Your name</label>
+            <input type="text" name="recipient">
+            
+            <label>Who are we sending this to?</label>
+            <input type="text" name="email">
+            
 
-        Who are we sending this to?
+            Choose a melon
+            <select name="melon">
+                <option value="watermelon">Watermleon</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="honeydew">Honeydew</option>
+            </select>
 
-        Choose a melon
-        Watermleon
-        Canteloupe
-        Honeydew
+            When should we deliver?
+            Morning
+            Evening
+            Any time
 
-        When should we deliver?
-        Morning
-        Evening
-        Any time
+            Enter your message:
 
-        Enter your message:
-
-        Subscribe to our newsletter
-        Yes
+            Subscribe to our newsletter
+            Yes
+        </form>
     </body>
 </html>
