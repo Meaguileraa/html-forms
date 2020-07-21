@@ -41,29 +41,42 @@
         <h2>Order Form</h2>
 
         <form>
-            <label>Your name</label>
-            <input type="text" name="recipient">
+            <div>
+                Your name
+                <input type="text" name="name">
+            </div>
             
-            <label>Who are we sending this to?</label>
-            <input type="text" name="email">
-            
+            <div>
+                Who are we sending this to?
+                <input type="text" name="recipient">
+            </div>
 
-            Choose a melon
-            <select name="melon">
-                <option value="watermelon">Watermleon</option>
-                <option value="canteloupe">Canteloupe</option>
-                <option value="honeydew">Honeydew</option>
-            </select>
+            <div>
+                Choose a melon
+                <select name="melon">
+                    <option value="watermelon">Watermleon</option>
+                    <option value="canteloupe">Canteloupe</option>
+                    <option value="honeydew">Honeydew</option>
+                </select>
+            </div>
 
-            When should we deliver?
-            Morning
-            Evening
-            Any time
+            <div>
+                When should we deliver?
+                <input type="radio" name="availability" value="morning"> Morning
+                <input type="radio" name="availability" value="evening"> Evening
+                <input type="radio" name="availability" value="any time"> Any time
+            </div>
 
-            Enter your message:
+            <div>
+                <p>Enter your message:</p>
+                <textarea name="message"></textarea>
+            </div>
 
-            Subscribe to our newsletter
-            Yes
+            <div>
+                Subscribe to our newsletter
+                <input type="chcekbox" name="subscribe" value="yes">Yes
+            </div>
+
         </form>
     </body>
 </html>
